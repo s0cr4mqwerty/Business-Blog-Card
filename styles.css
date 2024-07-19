@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --fuente-titulo: "Poppins", sans-serif;
+    --fuente-texto: "Lato", sans-serif;
+    --fuente-tamanio-titulo: 24px;
+    --fuente-tamanio-texto: 16px;
+    --fuente-tamanio-cargo: 15px;
+    --color-fuente: #677489;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #F2F5F9;
+
+}
+
+.card{
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0px 30px 100px 0px #F2F5F9;
+    border-radius: 16px;
+    background-color: #FFFFFF;
+}
+
+.card__contenedor__imagen{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.card__contenedor__imagen__persona{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1px;
+    border-radius: 16px;
+}
+.card__contenedor__imagen__marco{
+    box-sizing: content-box;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.card__contenedor__titulo{
+    margin: 0px 20px;
+    font-family: var(--fuente-titulo);
+    font-size: var(--fuente-tamanio-titulo);
+    font-weight: 500;
+}
+.card__contenedor__texto{
+    margin: 20px;
+    font-family: var(--fuente-texto);
+    font-size: var(--fuente-tamanio-texto);
+    color: var(--color-fuente);
+}
+
+.card__contenedor__perfil{
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    gap: 16px;
+    border-top: solid 1px #F2F5F9;
+    /* border-radius: 0 0 16px 16px; */
+}
+
+.card__contendor__perfil__imagen{
+    height: 35px;
+    width: 35px;
+    border: solid 3px red;
+    border-radius: 150px;
+}
+.card__contenedor__perfil__nombre{
+    font-family: var(--fuente-texto);
+    font-size: var(--fuente-tamanio-texto);
+    font-weight: 600;
+}
+.card__contenedor__perfil__puesto{
+    font-family: var(--fuente-texto);
+    font-size: var(--fuente-tamanio-cargo);
+    color: var(--color-fuente);
+}
